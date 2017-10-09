@@ -1,5 +1,6 @@
 package com.epicodus.myrestaurants2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ButtonBarLayout;
@@ -18,12 +19,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mFindRestaurantsButton = (Button) findViewById(R.id.findRestaurantsButton);
-            mFindRestaurantsButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                   Toast.makeText(MainActivity.this, "Hello World!", Toast.LENGTH_LONG).show();
-                }
-            });
+        mFindRestaurantsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(MainActivity.this, RestaurantActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
 

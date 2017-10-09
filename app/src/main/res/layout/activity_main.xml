@@ -19,7 +19,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
-        android:textSize="40sp"
+        android:textSize="60sp"
         android:text="MyRestaurants"
         android:textColor="@color/colorTextIcons"
         android:textStyle="bold"/>

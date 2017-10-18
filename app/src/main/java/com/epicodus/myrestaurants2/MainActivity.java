@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.epicodus.myrestaurants.RestaurantsActivity;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
